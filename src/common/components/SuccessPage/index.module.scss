@@ -1,0 +1,19 @@
+.successMessage {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.successMessage img {
+  width: 50px;
+  height: 50px;
+}
+.successMessage p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 43.58px;
+  text-align: center;
+  color: rgba(5, 27, 70, 1);
+  margin-top: 30px;
+}

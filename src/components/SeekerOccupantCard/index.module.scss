@@ -1,0 +1,212 @@
+@import '../../common/styles/variables.scss';
+
+.cardContainer {
+  width: 213px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  // gap: 15px;
+  cursor: pointer;
+}
+
+.dragIconContainer {
+  width: 2px;
+  height: 15px;
+  // margin-left: 9px;
+  visibility: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.selectedImage {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.cardContainer:hover .dragIconContainer {
+  visibility: visible;
+}
+
+.checkboxContainer {
+  background-color: #ffffff;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border: 0.5px solid #bfbfbf;
+}
+
+.occupantCard {
+  display: flex;
+
+}
+
+.clickedborder {
+  display: flex;
+  border: 1px solid #88BAFF;
+  // background-color: #F4F8FB;
+
+}
+
+.occupantDetails {
+  width: 363px;
+  height: 80px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-left: 10px;
+  gap: 8px;
+}
+
+.occupantDetails {
+  width: 363px;
+  height: 80px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-left: 10px;
+  gap: 8px;
+
+  @media (min-width: 1080px) and (max-width: 1260px) {
+    width: 290px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1300px) {
+    width: 310px;
+  }
+
+  @media (min-width: 1301px) and (max-width: 1365px) {
+    width: 330px;
+  }
+}
+
+.occupantDetailsColor {
+  background-color: #F4F8FB;
+}
+
+
+.seekerName,
+.age,
+.city {
+  font-size: 14px;
+  font-weight: 400;
+  color: #051B46;
+
+  @media (min-width: 1080px) and (max-width: 1365px) {
+    overflow: hidden;
+    width: 48px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  // word-break: break-all;
+}
+
+.age {
+  width: 54px;
+}
+
+.city {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.gender {
+  font-size: 14px;
+  font-weight: 400;
+  color: #051B46;
+  width: 20px;
+}
+
+.seekerName {
+  font-size: 14px;
+  color: $darkBlue;
+  line-height: 24px;
+}
+
+.seekerDetails {
+  display: flex;
+  gap: 15px;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    gap: 8px;
+  }
+
+  @media (min-width: 1080px) and (max-width: 1199px) {
+    gap: 4px;
+  }
+}
+
+.seekerName {
+  width: fit-content;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  font-weight: 600;
+}
+
+.seekerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  gap: 8px;
+  padding-left: 35px;
+}
+
+.separator {
+  width: 1.8px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: #b5b5b580;
+  margin-top: 3px;
+}
+
+.profileContainer {
+  width: 64px;
+  height: 64px;
+  margin-left: 1px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.profileDots {
+  display: flex;
+  // gap: 5px;
+  align-items: center;
+  // width: 40px;
+  // height: 50px;
+}
+
+.menuIcon {
+  width: 15px !important;
+  height: 15px !important;
+  margin-right: 11px;
+  margin-left: 11px;
+  cursor: pointer;
+}
+
+.tooltip {
+  z-index: 1;
+  color: red // Lower z-index for the tooltip
+}

@@ -1,0 +1,90 @@
+@import "../../common/styles/common.scss";
+.landingPageWrapper {
+  display: flex;
+  justify-content: center;
+  background-image: url(""); // Add your image path here
+  padding-top: 60px;
+  .landingPage {
+    max-width: 933px;
+    width: 100%;
+    .pageHeading {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      color: $blackBlue;
+      margin-bottom: 10px;
+      .mahatriaName {
+        color: $mahatriaName;
+      }
+    }
+    .pageDescription {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      color: $blackBlue;
+      margin-bottom: 40px;
+    }
+    .availableProgramsTitle {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      color: $blackBlue;
+      margin-bottom: 20px;
+    }
+  }
+
+  .addressAndButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    .locationSection {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      .venue {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        color: $blackBlue;
+        padding-right: 24px;
+        border-right: 1px solid $lineSeparator;
+        margin-left: 8px;
+      }
+      .viewOnMap {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        text-decoration: none;
+        color: $anchorTag;
+        padding-left: 24px;
+      }
+    }
+    .buttonWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .registerNowBtn {
+        border: none;
+        background-color: $white;
+        background-image: url("../../assets/images/button.svg");
+        width: 163px;
+        height: 50px;
+        padding: 10px 0 0 10px;
+        gap: 31px;
+        border-radius: 99px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@mixin maxWidth($num) {
+    @media (max-width: #{$num}px) {
+      @content;
+    }
+  }
+  
+  @mixin minWidth($num) {
+    @media (min-width: #{$num}px) {
+      @content;
+    }
+  }
+  
+  @mixin maxHeight($num) {
+    @media (max-height: #{$num}px) {
+      @content;
+    }
+  }
+  
+  @mixin minHeight($num) {
+    @media (min-height: #{$num}px) {
+      @content;
+    }
+  }
+  
+  @mixin rangeWidth($num1, $num2){
+    @media only screen and (min-width: #{$num1}px) and (max-width:  #{$num2}px) {
+      @content; 
+    }
+  }

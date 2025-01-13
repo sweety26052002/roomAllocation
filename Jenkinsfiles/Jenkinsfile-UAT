@@ -1,0 +1,77 @@
+pipeline {
+    agent any
+    environment {
+        SONARQUBE_PATH_UAT = '/var/lib/jenkins/tools/sonar-scanner-4.2.0.1873-linux/bin/sonar-scanner -Dsonar.projectKey=HDB-RA-fe-UAT -Dsonar.sources=./'
+    }
+    stages {
+        stage('get_commit_msg') {
+            steps {
+                script {
+                    env.GIT_COMMIT_MSG = sh (script: 'git log -1 --pretty=%B ${GIT_COMMIT}', returnStdout: true).trim()
+                    GIT_COMMIT_EMAIL = sh (
+                        script: 'git --no-pager show -s --format=\'%ae\'',
+                        returnStdout: true
+                    ).trim()
+                    echo "Git committer email: ${GIT_COMMIT_EMAIL}"
+                    echo "${GIT_COMMIT_MSG}"
+                }
+            }
+        }
+        stage('Sonarqube') {
+            steps {
+                script {
+                    nodejs('HDB') {
+                        withSonarQubeEnv('Sonar') {
+                            sh "${env.SONARQUBE_PATH_UAT}"
+                        }
+                    }
+                }
+            }
+        }
+        stage('Quality Gate') {
+            steps {
+                script {
+                    def qg = waitForQualityGate()
+                    if (qg.status != 'OK') {
+                        error "Pipeline aborted due to quality gate failure: ${qg.status}"
+                    }
+                }
+            }
+        }
+        stage('build') {
+            steps {
+                nodejs('HDB') {
+                    echo 'building'
+                    sh 'npm install --force'
+                    echo "UAT build"
+                    sh 'npm run build'
+                }
+            }
+        }
+        stage('deployment') {
+            steps {
+                script {
+                    echo "Deploying QA"
+                    sh 'tar -czvf dist.tar.gz build'
+                    sh 'scp dist.tar.gz hdb@hdqa.divami.com:/var/www/html/hdb-ra-uat/'
+                    sh 'ssh hdb@hdqa.divami.com "cd /var/www/html/hdb-ra-uat/ && sudo tar -xvzf dist.tar.gz --strip 1 "'
+                    sh 'ssh hdb@hdqa.divami.com "sudo systemctl restart apache2"'
+                    echo "Deployment success"
+                }
+            }
+        }
+    }
+    post {
+        success {
+            script {
+                googlechatnotification message: "Project Name: ${JOB_NAME} Build ${BUILD_NUMBER} from Branch uat on Environment uat was successful. Check output in https:/hdrauat.divami.com", url: "https://chat.googleapis.com/v1/spaces/AAAAvvizqQQ/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=QsCYKdNfZYKkwOVhVM1ESfAugOvKz3PFNrl5T9hQK5g"
+            }
+        }
+        failure {
+            googlechatnotification message: "Project Name: ${JOB_NAME} Build ${BUILD_NUMBER} from Branch uat on Environment uat has failed. Check output logs at ${RUN_DISPLAY_URL}", url: "https://chat.googleapis.com/v1/spaces/AAAAvvizqQQ/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=QsCYKdNfZYKkwOVhVM1ESfAugOvKz3PFNrl5T9hQK5g"
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

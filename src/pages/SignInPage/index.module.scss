@@ -1,0 +1,371 @@
+.cloudFadeEffect {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 130px;
+  transform: scale(1.235);
+}
+.wrapperCloudFadeEffect {
+  width: 1763px;
+  height: 1750.1px;
+  position: absolute;
+  margin: 0 !important;
+  right: -316px;
+  bottom: -386.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.signUp {
+  position: relative;
+  line-height: 28px;
+  font-weight: 600;
+}
+.howWouldYou {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+}
+.signUpContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.mobileNumber {
+  height: 40px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(85, 152, 219, 0.1);
+  min-width: 104px;
+  text-transform: none;
+  color: #051b46;
+  font-size: 16px;
+  background: #f3f9ff;
+  border: #1859b4 solid 1px;
+  border-radius: 4px 0px 0px 4px;
+}
+.mobileNumber:hover {
+  background: #f3f9ff;
+}
+
+.email1 {
+  position: relative;
+  line-height: 26px;
+  display: inline-block;
+  min-width: 42px;
+}
+.email,
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+.email {
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #d9d9d9;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 58px;
+  height: 40px;
+}
+.tabs {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.mobile {
+  width: 52px;
+  position: relative;
+  line-height: 26px;
+  display: none;
+}
+.formContainer {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  padding: 10px 16px 10px 16px;
+  gap: 12px;
+  text-align: center;
+}
+.error {
+  color: rgba(255, 89, 89, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+  text-align: left;
+}
+
+.form,
+.signUpSection1,
+.tabsForms {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.signUpSection1,
+.tabsForms {
+  justify-content: center;
+}
+.tabsForms {
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  font-size: 16px;
+}
+.signUpSection1 {
+  align-items: center;
+  gap: 60px;
+}
+.weWillSend {
+  flex: 1;
+  line-height: 26px;
+  margin-top: 114px;
+}
+.textIcon {
+  align-self: stretch;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 4px;
+}
+.phoneInput input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-left: 1px solid rgba(217, 217, 217, 1);
+  margin: 7px 0px 7px 6px;
+  padding-left: 12px;
+  outline: none;
+  background-color: white;
+}
+.otpButton {
+  border: none;
+  background-color: white;
+  background-image: url("../../assets/images/button.svg");
+  width: 163px;
+  height: 50px;
+  margin: 68px 0px 30px 0px;
+  padding: 10px 0 0 10px;
+  gap: 31px;
+  border-radius: 99px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resendOtpButton {
+  border: none;
+  background-color: white;
+  background-image: url("../../assets/images/button.svg");
+  width: 163px;
+  height: 50px;
+  margin: 30px 0px 30px 0px;
+  padding: 10px 0 0 10px;
+  gap: 31px;
+  border-radius: 99px;
+  display: flex;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.resendOtpButtonEnabled {
+  filter: none;
+  cursor: pointer;
+}
+.resendOtpButtonDisabled {
+  filter: grayscale(90%);
+  cursor: not-allowed;
+}
+.edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.mobileHeading {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #051b46;
+}
+.editButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.editIcon {
+  height: 24px;
+  width: 24px;
+}
+.mobileLabel {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #888888;
+  margin-top: 30px;
+}
+.signUpBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.otpText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #051b46;
+  margin-top: 80px;
+}
+.otpScreen {
+  display: flex;
+  flex-direction: column;
+}
+.signUpTop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.button,
+.signUpSection2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 7px 24px;
+  background-color: transparent;
+  width: 150px;
+  border-radius: 99px;
+  overflow: hidden;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-image: url("../../assets/images/button@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: 150px;
+  white-space: nowrap;
+}
+.signUpSection2 {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 16px;
+}
+.cards {
+  width: 400px;
+  box-shadow: 0 10px 50px rgba(232, 241, 249, 0.8);
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #e7eef3;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 38px 39px 40px;
+  gap: 100px;
+  max-width: 100%;
+  z-index: 1;
+  margin-top: 110px;
+}
+.cards,
+.content,
+.root {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+.root {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 108px;
+  gap: 108px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: 18px;
+  color: #051b46;
+}
+@media screen and (max-width: 725px) {
+  .topNav {
+    gap: 275px;
+  }
+  .root {
+    gap: 54px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .cards {
+    padding-top: 25px;
+    padding-bottom: 26px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .topNav {
+    gap: 137px;
+  }
+  .formContainer {
+    flex-wrap: wrap;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .signUpSection1 {
+    gap: 30px;
+  }
+  .cards {
+    gap: 50px;
+  }
+  .root {
+    gap: 27px;
+  }
+}

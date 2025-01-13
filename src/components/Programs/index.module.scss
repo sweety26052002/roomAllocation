@@ -1,0 +1,192 @@
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #E7EEF3;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .tableContainer {
+    height: 328px; /* Set a fixed height for the table container */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableHeader {
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100%;
+    height:48px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color:#888888;
+  }
+  .tableRow {
+    display: flex;
+    width: 100%;
+    height:48px;
+    align-items: center;
+    border-bottom:1px solid #E7EEF3;
+  }
+  
+  .investmentCell {
+    text-align: right;
+    padding-right: 40px;
+    width: 250px;
+  }
+  .programCell{
+   text-align: left;
+   padding-left: 40px;
+    width:159px;
+  }
+  .scheduleCell{
+    text-align: left;
+    padding-left: 40px;
+     width:332px;
+  }
+  .tableRows {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    border-bottom:1px solid #E7EEF3;
+  }
+  
+  .even {
+    height: 56px;
+    background-color: #fff;
+  }
+  .programText{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .welcomeText{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 600;
+    color:#051B46;
+  }
+  .mahatriaText{
+    font-size: 16px;
+    font-weight: 600;
+    color: #D9251D;
+    padding-left: 4px;
+    padding-right: 5px;
+  }
+
+  .programsContainer {
+    display: flex;
+    width: 933px;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .programs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .programContent{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+    color:#051B46;
+  }
+  .organizeFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+   width:100%;
+    height: 42px;
+    border-top: 1px solid #F0F0F0;
+    color: 'black';
+  
+  }
+  .footerDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap:24px;
+    height: 42px;
+    // width: 100%;
+  }
+  .footerElement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+  }
+  .divider{
+    border-left: 2px solid #A5A5A5;
+    height:16px;
+  }
+  .footerImage{
+    height: 18px;
+    width: 18px;
+  }
+.availableProgramsText{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 40px;
+  color:#051B46;
+}
+.address{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+ gap:24px;
+ 
+}
+.addressText{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color:#051B46;
+}
+.viewText{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color:#1859B4;
+
+}
+.location{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
+  flex-direction: row;
+  width:100%;
+}
+.footerValue{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#051B46;
+}
+.footerValueColor{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#1859B4;
+}
+  
+  

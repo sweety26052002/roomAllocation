@@ -1,0 +1,136 @@
+.topNav {
+    align-self: stretch;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+    background-color:#fff;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 20px;
+    gap: 550px;
+    top: 0;
+    z-index: 99;
+    position: sticky;
+    text-align: left;
+    font-size: 16px;
+    color: #051b46;
+    font-family: var(--title-regular);
+  }
+  
+  .topNavDropdown,
+  .topNavDropdown1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .topNavDropdown {
+    flex-direction: row;
+    gap: 8px;
+  }
+  
+  .topNavDropdown1 {
+    display: none;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .imageIcon {
+    height: 40px;
+    width: 40px;
+    border-radius: 700px;
+    object-fit: cover;
+    mix-blend-mode: normal;
+  }
+  
+  .hdbWrapper {
+    flex-direction: column;
+    padding: 7px 0 0;
+  }
+  
+  .hdb {
+    position: relative;
+    text-decoration: none;
+    line-height: 26px;
+    color: inherit;
+  }
+  
+  .rahatriaDotsWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 13px 0 0;
+  }
+  
+  .rahatriaDots {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .rahatriaDotsChild,
+  .rahatriaDotsInner,
+  .rahatriaDotsItem {
+    height: 14px;
+    width: 14px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #d9251d;
+  }
+  
+  .imagePlaceholder {
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .centreFinal3 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .dropdown {
+    height: 26px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .myProfile {
+    align-self: stretch;
+    position: relative;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+  
+  .icons {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    display: none;
+  }
+  
+  @media screen and (max-width: 1125px) {
+    .topNav {
+      gap: 275px;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .topNav {
+      gap: 137px;
+    }
+  }
+  

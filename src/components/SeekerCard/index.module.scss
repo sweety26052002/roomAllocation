@@ -1,0 +1,158 @@
+// .container {
+//   display: flex;
+//   gap: 8px;
+//   padding: 9px 9px 9px 24px;
+//   border: 1px solid #e8e8e8;
+//   width: 312px;
+//   background-color: #ffffff;
+//   cursor: pointer;
+// }
+
+// .seekerName {
+//   font-size: 14px;
+//   font-weight: 600;
+//   color: #051b46;
+// }
+
+// .seekerDetails {
+//   display: flex;
+// }
+
+// .gender,
+// .age {
+//   font-size: 14px;
+//   font-weight: 400;
+//   color: #051b46;
+//   border-right: 1px solid #70707080;
+//   padding-right: 8px;
+// }
+
+// .city {
+//   font-size: 14px;
+//   font-weight: 400;
+//   color: #051b46;
+//   padding-left: 8px;
+// }
+
+// .age {
+//   padding-left: 8px;
+// }
+
+// .seekerContainer {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 8px;
+//   cursor: pointer;
+// }
+
+
+.container {
+  display: flex;
+  gap: 7px;
+  padding: 12px 12px 12px 7px;
+  width: 280px;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px 0px #00000026;
+  position: relative;
+  @media (min-width: 1080px) and (max-width: 1260px) {
+    width: 260px;
+}
+}
+.profileContainer {
+  display: flex;
+  gap: 16px;
+}
+.seekerName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #051b46;
+}
+
+.seekerDetails {
+  display: flex;
+}
+
+.gender,
+.age {
+  font-size: 14px;
+  font-weight: 400;
+  color: #051b46;
+  padding-right: 8px;
+}
+.gender {
+  border-right: 1px solid #70707080;
+}
+.ageBorder{
+  border-right: 1px solid #70707080;
+}
+
+.city {
+  font-size: 14px;
+  font-weight: 400;
+  color: #051b46;
+  padding-left: 8px;
+  width:70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.age {
+  width:65px;
+  padding-left: 8px;
+}
+
+.seekerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width:164px;
+  cursor: pointer;
+}
+
+.occupantDetailsColor {
+  background-color: #F4F8FB;
+  border: 1px solid #88BAFF;
+}
+
+.pairedUnallocateIcon{
+  transform: rotate(90deg);
+  position: absolute;
+  left: 40%;
+  top: 88%;
+  z-index: 999;
+  img{
+    height: 20px;
+    width: 50px;
+  }
+}
+
+.pairedUnallocateUnpairIcon{
+  transform: rotate(90deg);
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  z-index: 999;
+  img{
+    height: 50px;
+    width: 50px;
+  }
+}
+.seekerName {
+  width: fit-content;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  font-weight: 600;
+}
+
+.marginBottom{
+  margin-bottom: 2px !important;
+}
+.tooltip {
+  z-index: 1; // Lower z-index for the tooltip
+}

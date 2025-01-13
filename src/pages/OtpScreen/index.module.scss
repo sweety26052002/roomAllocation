@@ -1,0 +1,16 @@
+.otpContainer{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.otpInput {
+    width: 40px;
+    height: 45px;
+    margin: 0 10px;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(231, 238, 243, 1);
+    text-align: center;
+  }

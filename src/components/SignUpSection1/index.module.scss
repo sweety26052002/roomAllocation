@@ -1,0 +1,136 @@
+  
+.howWouldYou,
+.signUp {
+  margin: 0;
+  position: relative;
+}
+.signUp {
+  height: 44px;
+  font-size: inherit;
+  font-weight: 300;
+  font-family: inherit;
+  display: inline-block;
+}
+.howWouldYou {
+  align-self: stretch;
+  font-size: 16px;
+  line-height: 26px;
+}
+.icons1 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: none;
+}
+.signUpContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.mobileNumber {
+    max-width: 50%;
+  height: 40px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(85, 152, 219, 0.1);
+  min-width: 104px;
+}
+.email1 {
+  position: relative;
+  line-height: 24px;
+}
+.email,
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+.email {
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #d9d9d9;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 61px;
+}
+.tabs {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.mobile {
+  width: 52px;
+  position: relative;
+  line-height: 26px;
+  display: none;
+}
+.flagPackIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icons2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.countryDropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.formContainerChild {
+  height: 24px;
+  width: 1px;
+  position: relative;
+}
+.div {
+  position: relative;
+  line-height: 26px;
+  white-space: nowrap;
+}
+.formContainer {
+  align-self: stretch;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 99px 8px 16px;
+  gap: 12px;
+  text-align: center;
+}
+.form,
+.signUpSection1,
+.tabsAndForm {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+  font-size: 16px;
+}
+.signUpSection1,
+.tabsAndForm {
+  justify-content: center;
+}
+.tabsAndForm {
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+.signUpSection1 {
+  align-items: center;
+  gap: 60px;
+}

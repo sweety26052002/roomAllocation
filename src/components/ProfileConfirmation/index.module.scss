@@ -1,0 +1,77 @@
+@import "../../common/styles/variables.scss";
+
+.container{
+    margin: 20px 20px 30px 20px;
+    width: 100%;
+    // background-image: url("../../assets/images/profileconfirmationbg.png");
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    font-family: $natoSansRegular;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $darkBlue;
+}
+.headicon{
+    display: flex;
+    gap: 6px;
+    font-family: $natoSansRegular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $blue;
+}
+
+.profile{
+    margin-top: 24px;
+    display: flex;
+
+    gap: 20px;
+    &_image{
+        img{
+        border-radius: 50%;
+        }
+    }  
+
+    &_details{
+        margin-top: 24px;
+        color: $darkBlue;
+        &_container{
+            width: 100%;
+        }
+        &_data{
+                margin: 0px;
+            font-family: $natoSansRegular;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px; 
+            display: flex;
+            gap: 8px; 
+            align-items: center;
+        }
+    }
+}
+.other_details{
+    margin-top: 40px;
+}
+
+.separator{
+    width: 0px;
+    height: 12px;
+    border: 1px solid rgba(112, 112, 112, 0.50);
+}
+
+.name{
+    color: $darkBlue;
+
+    margin: 0px;
+    font-family: $natoSansRegular;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}

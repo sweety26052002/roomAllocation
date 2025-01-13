@@ -1,0 +1,462 @@
+.main {
+  width: 100%;
+  margin-top: 62px;
+
+  .navigateBack {
+    width: auto;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    margin-left: 16px;
+    .navigateBackImage {
+      width: 28px;
+      height: 28px;
+    }
+    .navigateBackHeading {
+      height: 25px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24.55px;
+      text-align: left;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+  .body {
+    padding-left: 49px;
+    margin-top: 20px;
+
+    .GSTBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+
+      .GSTBlockHeading {
+        height: 27px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27.28px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+      }
+      .GSTBlockBody {
+        display: flex;
+        gap: 41px;
+        .noRadioButton input {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+        }
+        .noRadioButton {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19.1px;
+          text-align: left;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        .yesRadioButton {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19.1px;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .yesRadioButtonInput {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+        }
+        .GSTInput {
+          width: 325px;
+          height: 36px;
+          margin-left: 16px;
+        }
+      }
+      .unregisteredGSTMessage {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(236, 28, 36, 1);
+      }
+    }
+    .invoiceDetails {
+      margin-top: 32px;
+      .invoiceDetailsHeading {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27.28px;
+        text-align: left;
+        .invoiceDetailsNote {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19.1px;
+          text-align: left;
+        }
+      }
+      .invoiceRadioButtonBlock {
+        display: flex;
+        gap: 6px;
+        margin-top: 10px;
+        .invoiceRadioButton {
+          width: 16px;
+          height: 16px;
+          padding: 2.41px;
+          cursor: pointer;
+        }
+      }
+      .invoiceName {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .invoiceNameLabel {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+        .invoiceNameInput {
+          width: 196px;
+          height: 43px;
+          padding: 12px 16px 12px 16px;
+          text-align: left;
+          margin-top: 6px;
+          gap: 8px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+      }
+      .invoiceAddress {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        .invoiceAddressLabel {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+        .invoiceAddressInput {
+          width: 453px;
+          height: 76px;
+          padding: 12px 16px 12px 16px;
+          margin-top: 6px;
+          gap: 8px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+      }
+      .invoicePincode {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        .invoicePincodeLabel {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+        .invoicePincodeInput {
+          margin-top: 6px;
+          width: 196px;
+          height: 43px;
+          padding: 12px 16px 12px 16px;
+          gap: 8px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+      }
+    }
+    .TDSForm {
+      margin-top: 29px;
+      display: flex;
+      flex-direction: column;
+      .TDSFormHeading {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27.28px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+      }
+      .TDSFormLabel {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(52, 64, 84, 1);
+      }
+      .TDSFormInput {
+        width: 325px;
+        margin-top: 6px;
+        height: 43px;
+        padding: 12px 16px 12px 16px;
+        gap: 8px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(208, 213, 221, 1);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      }
+    }
+    .paymentMethods {
+      margin-top: 55px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 14px;
+      margin-bottom: 102px;
+      .paymentMethodsHeading {
+        top: 861px;
+        left: 49.75px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27.28px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+      }
+      .methods {
+        display: flex;
+        gap: 23px;
+        .methodTypes {
+          display: flex;
+          gap: 10px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16.8px;
+          text-align: left;
+          color: rgba(38, 38, 61, 1);
+          .methodTypesInput {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+      .gateway {
+        .gatewayName {
+          display: flex;
+          gap: 17px;
+          margin-top: 57px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21.82px;
+          text-align: left;
+          color: rgba(0, 0, 0, 1);
+          .gatewayImage {
+            width: 33px;
+            height: 33px;
+            margin-left: 20px;
+          }
+        }
+        .gatewayLink {
+          margin-top: 33px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21.82px;
+          text-align: left;
+          color: rgba(64, 133, 204, 1);
+          margin-left: 20px;
+          cursor: pointer;
+        }
+      }
+      .datefield {
+        display: flex;
+        gap: 29px;
+        margin-top: 33px;
+        .InputContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .dateInputLabel {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+
+        .dateInput {
+          width: 300px;
+          height: 48px;
+          gap: 8px;
+          padding: 12px 28.44px 12px 16px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+        .dropdownLabel {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+        .dropdownSelect {
+          width: 300px;
+          height: 48px;
+          padding: 11px 18px 9px 16px;
+          gap: 8px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+      }
+      .inputRow {
+        display: flex;
+        margin-top: 33px;
+        gap: 48px;
+
+        .InputContainerCardSwipe {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+        .dateInput,
+        .textFieldInput {
+          width: 300px;
+          height: 48px;
+          gap: 8px;
+          padding: 12px 20px 12px 16px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+      }
+      .CardSwipeDropDown {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(52, 64, 84, 1);
+      }
+      .CardSwipedropdownSelect {
+        width: 300px;
+        height: 48px;
+        padding: 12px 20px 12px 16px;
+        gap: 8px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(208, 213, 221, 1);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      }
+      .amountAndCheque {
+        display: flex;
+        gap: 43px;
+        margin-top: 35px;
+        .amountInputContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+        .amountTextFieldLabel {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+        .amountTextFieldInput {
+          width: 300px;
+          height: 47px;
+          padding: 12px 16px 12px 16px;
+          gap: 8px;
+          border-radius: 8px;
+          background: rgba(235, 235, 235, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+        .chequeTextFieldInput {
+          width: 300px;
+          height: 47px;
+          padding: 12px 16px 12px 16px;
+          gap: 8px;
+          border-radius: 8px;
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          background: rgba(255, 255, 255, 1);
+        }
+        .chequeDate {
+          margin-top: 25px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: rgba(52, 64, 84, 1);
+        }
+        .chequeDateInput {
+          width: 300px;
+          height: 48px;
+          padding: 10px 24px 10px 16px;
+          gap: 8px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(208, 213, 221, 1);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 63.9px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 32px;
+    align-items: end;
+    justify-content: end;
+    margin-bottom: 10px;
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 27px;
+  }
+  .backButton {
+    width: 180px;
+    height: 40px;
+    animation-duration: 0ms;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(91, 128, 234, 1);
+    border: 1px solid rgba(91, 128, 234, 1);
+  }
+  .submitButton {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    background-color: rgba(91, 128, 234, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(91, 128, 234, 1);
+  }
+}

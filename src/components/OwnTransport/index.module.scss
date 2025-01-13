@@ -1,0 +1,63 @@
+.back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.travelOrganizeText {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.locationText {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-left: 54px;
+    margin-top: 34px;
+    margin-bottom: 46px;
+}
+
+.vehicle {
+    width: 45px;
+    height: 45px;
+}
+.transport {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   width:1284px;
+    height: 64px;
+    margin-left: 58px;
+    border: 1px solid #D6D6D6;
+    background-color: #FBFBFB;
+    padding-left: 13px;
+}
+.transportText{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 22px;
+}
+.mapDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    margin-left:58px ;
+    margin-top: 26px;
+}
+.addressDiv{
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+    align-items: start;
+    margin-left:88px ;
+    margin-top: 6px;
+   
+}

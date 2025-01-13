@@ -1,0 +1,84 @@
+// .row {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 10px;
+//   }
+  
+//   .row input[type="radio"] {
+//     margin-right: 10px;
+//   }
+  
+//   .row.selected {
+//     background-color: #e0f7fa; /* Light cyan background */
+//     border-radius: 5px;
+//     padding: 5px;
+//   }
+  
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.travelOrganizeText {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.preferences {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.selected {
+  background-color: #e0e0e0;
+}
+
+.flightInfo {
+  margin-left: 10px;
+}
+
+.flightList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

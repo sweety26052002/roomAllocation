@@ -1,0 +1,91 @@
+  .signUpHill {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 80px;
+    gap: 109px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  .mahatriaImageIcon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .signUpHill,
+  .signUpHillInner {
+    display: flex;
+    box-sizing: border-box;
+  }
+  .signUpHillInner {
+    width: 1347px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: #051b46;
+    font-family: var(--title-regular);
+  }
+  
+  .frameParent {
+    width: 1129px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 179px;
+  }
+  .frameParent {
+    display: flex;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 1125px) {
+    .frameParent {
+      gap: 89px;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    .frameParent {
+        flex-wrap: wrap;
+      }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .frameParent {
+        gap: 45px;
+      }
+      .signUpHill {
+        gap: 54px;
+      }
+  }
+
+  @media screen and (max-width: 450px) {
+    .signUp {
+        font-size: 19px;
+      }
+      .frameParent {
+        gap: 22px;
+      }
+      .signUpHill {
+        gap: 27px;
+      }
+  }
+  

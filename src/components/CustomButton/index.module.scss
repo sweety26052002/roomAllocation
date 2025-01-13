@@ -1,0 +1,24 @@
+.filled {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #3f3f3f;
+  box-shadow: "0px 6px 10px 0px #3f3f3f";
+  border-radius: 20px;
+  padding: 8px 46px;
+  cursor: pointer;
+}
+.outlined {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #565656;
+  color: #565656;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 8px 46px;
+  cursor: pointer;
+}

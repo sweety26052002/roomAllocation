@@ -1,0 +1,47 @@
+@import "../../common/styles/variables.scss";
+
+.container{
+    margin-top: 80px;
+}
+.videoContainer{
+    width: 100%;
+    border: 1px solid black;
+    height: 338px;
+    text-align: center;
+    align-items: center;
+}
+.videoText, .caption, .headingCaption{
+    font-weight: 400;
+}
+.headingCaption{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.caption{
+    font-size: 12px;
+}
+.count{
+    font-weight: 400;
+    color: $gray;
+}
+.button{
+    color: $darkBlue;
+    width: 200px;
+    border-radius: 99px;
+    background-color: white;
+    border: 1px solid $blue;
+    padding: 0px, 24px, 0px, 24px;
+    height: 40px;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    :nth-child(1){
+        font-weight: 600;
+        font-size: 16px;
+    }
+   
+    margin-bottom: 30px;
+
+}

@@ -1,0 +1,513 @@
+.main {
+    width: 100%;
+    height: 100vh;
+  }
+  .heading {
+    height: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .profile {
+    margin: 10px 24px 24px 24px;
+    display: flex;
+    gap: 20px;
+  }
+  .sideBar {
+    min-width:183px;
+    height: 390px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1);
+    // background-image: url("../../assets/images/side-bar.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .profileConfirmationBlock {
+    min-width: 96.725%;
+    width: 100%;
+    height: 1450px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+  .profileConfirmationHeadingBlock {
+    display: flex;
+    justify-content: space-between;
+    height: 26px;
+  }
+  .profileConfirmationHeading {
+    width: auto;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    margin: 0px;
+  }
+  .profileConfirmationcompleted {
+    margin: 0px;
+    width: auto;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(136, 136, 136, 1);
+    display: none;
+  }
+  .profileConfirmationDetails {
+    display: flex;
+    margin-top: 24px;
+    gap: 40px;
+  }
+  .profileImageContainer {
+    width: 132px;
+    height: 132px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: inline-block;
+    border-radius: 999px;
+  }
+  .profilePhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .editPen {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .firstRow {
+    display: flex;
+    gap: 40px;
+  }
+  .nameLable {
+    width: auto;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+    margin: 0px;
+  }
+  .nameInput {
+    margin-top: 6px;
+    width: 320px;
+    height: 40px;
+    gap: 12px;
+    border-radius: 4px;
+    border: 1px 0px 0px 0px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(165, 165, 165, 1);
+    display: flex;
+    gap: 4px;
+  }
+  .nameTitle {
+    width: 62px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    margin: 7px 0px;
+    border: none;
+  }
+  .nameInputField {
+    border: 0px;
+    border-left: 1px solid rgba(217, 217, 217, 1);
+    margin: 8px 0px;
+    padding: 0px 12px;
+    outline: none;
+  }
+  .dateInput {
+    margin-top: 6px;
+    width: 320px;
+    height: 40px;
+    padding: 0px 12px 0px 12px;
+    gap: 12px;
+    border-radius: 4px;
+    border: 1px 0px 0px 0px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(165, 165, 165, 1);
+    outline: none;
+  }
+  .genderLabel {
+    width: auto;
+    height: 26px;
+    opacity: 0.5;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .radioButton {
+    display: flex;
+    gap: 8px;
+    opacity: 0.5;
+  }
+  .radioButton input {
+    margin: 0px;
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+    outline: none;
+  }
+  .contactInfoheading {
+    display: flex;
+    gap: 16px;
+  }
+  .contactInfoheading p {
+    width: 140px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+    margin-top: 60px;
+  }
+  .contactInfoheading span {
+    width: 83.585%;
+    border-bottom: 1px solid rgba(134, 134, 134, 1);
+    margin-bottom: 10px;
+  }
+  .mobileNumberLabel {
+    margin-top: 30px;
+    width: 116px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+  }
+  .mobileNumber input {
+    width: 100%;
+    outline: none;
+  }
+  .phoneInputContainer {
+    width: 320px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 4px;
+    margin-top: 6px;
+    border: 1px solid rgba(165, 165, 165, 1);
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+  }
+  .phoneInput input {
+    width: 234px;
+    border: none;
+    border-left: 1px solid rgba(217, 217, 217, 1);
+    margin: 7px 0px 7px 6px;
+    padding-left: 12px;
+    outline: none;
+  }
+  
+  .mailLabel {
+    width: auto;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+    margin-top: 31px;
+  }
+  .mailInputField {
+    width: 320px;
+    height: 40px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(165, 165, 165, 1);
+    margin-top: 6px;
+    outline: none;
+  }
+  .myAddressHeading {
+    display: flex;
+    gap: 16px;
+  }
+  .myAddressHeading p {
+    width: 79px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+    margin-top: 60px;
+  }
+  .myAddressHeading span {
+    width: 89.322%;
+    border-bottom: 1px solid rgba(134, 134, 134, 1);
+    margin-bottom: 10px;
+  }
+  .myAddress {
+    width: 320px;
+    height: 72px;
+  }
+  .myAddress p {
+    margin-top: 30px;
+    width: 110px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+  }
+  .myAddress input {
+    width: 320px;
+    height: 40px;
+    margin-top: 6px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(165, 165, 165, 1);
+    outline: none;
+  }
+  .pinCode {
+    margin-top: 30px;
+    width: 320px;
+    height: 72px;
+  }
+  .pinCode p {
+    margin-top: 30px;
+    width: 67;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+  }
+  .pinCode input {
+    width: 320px;
+    height: 40px;
+    margin-top: 6px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(165, 165, 165, 1);
+    outline: none;
+  }
+  .country {
+    margin-top: 60px;
+    width: 320px;
+    height: 72px;
+    text-align: left;
+  }
+  .country p {
+    margin: 0px;
+    margin-bottom: 6px;
+    width: 67;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+  }
+  .country input {
+    outline: none;
+    width: 320px;
+    height: 26px;
+    margin-top: 6px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(165, 165, 165, 1);
+  }
+  .infiniDetails {
+    display: flex;
+    margin-top: 60px;
+    gap: 16px;
+  }
+  .infiniDetails p {
+    width: auto;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+  }
+  .infiniDetails span {
+    height: 0px;
+    margin-top: 15px;
+    opacity: 0.3;
+    width: 83.101%;
+    border: 1px solid rgba(134, 134, 134, 1);
+  }
+  
+  .regionalManager p {
+    width: 320px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+  }
+  
+  .regionalManagerContainer {
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+  }
+  .regionalManager {
+    width: 320px;
+    height: 40px;
+    text-align: left;
+  }
+  .regionalManager p {
+    width: 165px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(5, 27, 70, 1);
+    margin-bottom: 10px;
+  }
+  .regionalManager input {
+    width: 320px;
+    height: 26px;
+    margin-top: 6px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(165, 165, 165, 1);
+    outline: none;
+  }
+  .regionalManagerPhoto {
+    width: 100px;
+    height: 100px;
+  }
+  .proInvoiceDetails {
+    display: flex;
+    gap: 6px;
+  }
+  .proInvoiceDetails p {
+    width: 175px;
+    height: 24px;
+    margin-top: 60px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+  .proInvoiceDetails span {
+    width: 712px;
+    opacity: 0.3;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(134, 134, 134, 1);
+  }
+  .personalInfoName {
+    width: 903px;
+    height: 26px;
+    display: flex;
+    gap: 11px;
+    border-radius: 99px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 30px;
+      margin-bottom: 20px;
+  }
+  .personalInfoName input {
+    width: 24px;
+    height: 26px;
+    border: 1px solid rgba(24, 89, 180, 1);
+    background: rgba(24, 89, 180, 1);
+    outline: none;
+  }
+  .personalInfoAddress {
+    margin-left: 43px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+  }
+  .personalInfoAddress span {
+    width: 145px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 0 8px 0px 0px;
+    margin: 7px 8px 7px 0px;
+    border-right: 1px solid grey;
+  }
+  .addProForma {
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
+  }
+  .addProForma a{
+    width: 271px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-left: 5px;
+  }
+  .backButton {
+    border: none;
+    background-color: white;
+    width: 80px;
+    height: 26px;
+    margin-top: 10px;
+    margin-right: 190px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: right;
+    color: rgba(24, 89, 180, 1);
+    position: absolute;
+  }
+  .updateButton {
+    border: none;
+    // background-color: white;
+    // background-image: url("../../assets/images/button.svg");
+    width: 163px;
+    height: 50px;
+    margin: 30px 0px 30px 0px;
+    padding: 10px 0 0 10px;
+    gap: 31px;
+    border-radius: 99px;
+    display: flex;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .buttonBlock {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .error{
+    color: red;
+  }
+  
